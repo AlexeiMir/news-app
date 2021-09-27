@@ -1,0 +1,52 @@
+@import 'styles/mixins';
+.root{
+  @include flexbox(center, space-between);
+
+  position: fixed;
+  width: 100%;
+  background-color: #fff4e2 !important;
+  padding: 0 35px 0 10px;
+  height: 60px;
+  margin-bottom: 14px;
+  z-index: 1;
+}
+.search {
+@include flexbox('center', 'center')
+}
+
+.message {
+  @include flexbox('center', 'center')
+
+}
+
+.searchBlock {
+  position: relative;
+  margin-right: 15px;
+  width: 310px;
+
+  input {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    padding-left: 40px;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      border-color: darken(#fff4e2, 15%);
+      box-shadow: 0 0 0 3px rgb(229 160 64 / 12%);
+    }
+  }
+}
+
+.search_icon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  opacity: 0.3;
+}
