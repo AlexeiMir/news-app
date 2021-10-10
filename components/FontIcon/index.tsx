@@ -7,6 +7,10 @@ export enum FontIconName {
   Clock = 'icon-clock',
   Bell = 'icon-bell',
   User = 'icon-user-outline',
+  Fire = 'icon-fire',
+  Mail = 'icon-mail',
+  Rating = 'icon-chart-line',
+  List = 'icon-list',
 }
 
 interface IProps {
