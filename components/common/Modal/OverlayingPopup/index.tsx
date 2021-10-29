@@ -15,7 +15,14 @@ const OverlayingPopup: FC<IProps> = ({ children, onClose, isOpened }) => {
   return (
     <Portal>
       <div className={styles.container} role="dialog">
-        <div className={styles.overlay} role="button" tabIndex={0} onClick={onClose} />
+        <div
+          className={styles.overlay}
+          role="button"
+          aria-label="Close"
+          tabIndex={0}
+          onClick={onClose}
+          onKeyDown={onClose}
+        />
         {children}
       </div>
     </Portal>
