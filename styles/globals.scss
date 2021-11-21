@@ -1,11 +1,27 @@
 @import '../fontello/css/fontello.css';
+
+:root {
+  --main-color: #1a8fff;
+  --text-color: #777;
+  --text-color-light: #ccc;
+  --border-color: #eee;
+  --bg-color: #f9f9f9;
+  --neutral-color: #fff;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   background-color: rgb(242, 242, 242);
-  font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--text-color);
 }
+
+
 
 a {
   color: inherit;

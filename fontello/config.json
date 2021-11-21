@@ -53,6 +53,18 @@
       "css": "chart-line",
       "code": 59399,
       "src": "entypo"
+    },
+    {
+      "uid": "3a89ddb1c81111c15d6c4e26cc3c546a",
+      "css": "cog-outline",
+      "code": 59400,
+      "src": "typicons"
+    },
+    {
+      "uid": "2hqh2lidoqvaujgq29tdkrtiay5s6tyk",
+      "css": "chat",
+      "code": 59401,
+      "src": "typicons"
     }
   ]
 }

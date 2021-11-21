@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { Paper, Typography } from '@material-ui/core';
 import Image from 'next/image';
 
-import styles from './Post.module.scss';
+import styles from './styles.module.scss';
 import { PostActions } from '../PostActions';
+import { CalendarFns } from '../CalendarFns';
 
 export const Post: React.FC = () => {
   return (
     <Paper elevation={0} classes={{ root: styles.paper }}>
+      <CalendarFns />
       <Typography variant="h5" className={styles.title}>
         <Link href="/news/test-123">
           <a>

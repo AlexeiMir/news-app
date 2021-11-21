@@ -63,6 +63,7 @@ module.exports = {
     'consistent-return': 0,
     'no-trailing-spaces': 0,
     'operator-linebreak': 0,
+    'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['state'] }],
     'implicit-arrow-linebreak': 0,
     'react/button-has-type': 0,
     'react/self-closing-comp': [

@@ -4,7 +4,7 @@ import { PostActions } from '../PostActions';
 import MessageIcon from '@material-ui/icons/TextsmsOutlined';
 import UserAddIcon from '@material-ui/icons/PersonAddOutlined';
 
-import styles from './FullPost.module.scss';
+import styles from './styles.module.scss';
 
 export const FullPost = () => {
   return (

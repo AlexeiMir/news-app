@@ -1,7 +1,8 @@
 import React from 'react';
 import { Divider, Paper, Tab, Tabs, Typography } from '@material-ui/core';
-import { Comment } from '../Comment';
-import { AddCommentForm } from '../AddCommentForm';
+import { CustomButton } from 'aleksmir-ui-kit';
+import Comment from '../Comment';
+import AddCommentForm from '../AddCommentForm';
 import data from '../../data';
 import styles from './styles.module.scss';
 
@@ -15,6 +16,7 @@ export const PostComments: React.FC = () => {
         <Typography variant="h6" className={styles.comment_number}>
           42 комментария
         </Typography>
+        <CustomButton>Custom</CustomButton>
         <Tabs
           onChange={(_, newValue) => setActiveTab(newValue)}
           className={styles.tabs}

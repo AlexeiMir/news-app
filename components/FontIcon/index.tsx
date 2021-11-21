@@ -11,6 +11,8 @@ export enum FontIconName {
   Mail = 'icon-mail',
   Rating = 'icon-chart-line',
   List = 'icon-list',
+  Settings = 'icon-cog-outline',
+  Chat = 'icon-chat',
 }
 
 interface IProps {

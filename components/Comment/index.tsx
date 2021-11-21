@@ -13,7 +13,7 @@ interface CommentPostProps {
   createdAt: string;
 }
 
-const MyComponent: FC<CommentPostProps> = ({ user, text, createdAt }) => {
+const Comment: FC<CommentPostProps> = ({ user, text, createdAt }) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
   const handleClick = useCallback(
@@ -46,3 +46,4 @@ const MyComponent: FC<CommentPostProps> = ({ user, text, createdAt }) => {
     </div>
   );
 };
+export default Comment;
