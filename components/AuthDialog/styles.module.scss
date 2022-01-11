@@ -1,0 +1,21 @@
+@import 'styles/mixins.scss';
+
+.content {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.title {
+  font-size: 18px;
+  color: black !important;
+  margin-bottom: 25px !important;
+  font-weight: 500 !important;
+}
+
+.back_title {
+  @include flexbox(center, center);
+
+  &:hover {
+    color: #4683d9;
+  }
+}

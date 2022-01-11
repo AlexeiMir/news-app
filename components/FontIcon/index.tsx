@@ -13,6 +13,10 @@ export enum FontIconName {
   List = 'icon-list',
   Settings = 'icon-cog-outline',
   Chat = 'icon-chat',
+  ArrowRight = 'icon-right-open',
+  ArrowLeft = 'icon-left-open',
+  ArrowDown = 'icon-down-open',
+  ArrowUp = 'icon-up-open',
 }
 
 interface IProps {
