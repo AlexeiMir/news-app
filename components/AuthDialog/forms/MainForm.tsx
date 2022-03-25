@@ -12,36 +12,34 @@ interface IProps {
   onOpenLogin: () => void;
 }
 
-const MainForm: FC<IProps> = ({ onOpenLogin }) => {
-  return (
-    <>
-      <div>
-        <Button variant="contained" fullWidth>
-          <VkIcon />
-          ВКонтакте
-        </Button>
-        <Button variant="contained" fullWidth>
-          <GoogleIcon />
-          Google
-        </Button>
-        <Button onClick={onOpenLogin} variant="contained" fullWidth>
-          <EmailIcon />
-          Через почту
-        </Button>
-      </div>
-      <div className={styles.mini_buttons}>
-        <Button>
-          <FacebookIcon />
-        </Button>
-        <Button>
-          <TwitterIcon />
-        </Button>
-        <Button>
-          <AppleIcon />
-        </Button>
-      </div>
-    </>
-  );
-};
+const MainForm: FC<IProps> = ({ onOpenLogin }) => (
+  <>
+    <div>
+      <Button variant="contained" fullWidth>
+        <VkIcon />
+        ВКонтакте
+      </Button>
+      <Button variant="contained" fullWidth>
+        <GoogleIcon />
+        Google
+      </Button>
+      <Button onClick={onOpenLogin} variant="contained" fullWidth>
+        <EmailIcon />
+        Через почту
+      </Button>
+    </div>
+    <div className={styles.mini_buttons}>
+      <Button>
+        <FacebookIcon />
+      </Button>
+      <Button>
+        <TwitterIcon />
+      </Button>
+      <Button>
+        <AppleIcon />
+      </Button>
+    </div>
+  </>
+);
 
 export default MainForm;

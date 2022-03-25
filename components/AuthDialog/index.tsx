@@ -1,10 +1,11 @@
 import React, { FC, useCallback, useState } from 'react';
+import { Button } from '@material-ui/core';
 import styles from './styles.module.scss';
 import OverlayingPopup from '../common/Modal/OverlayingPopup';
 import FontIcon, { FontIconName } from '../FontIcon';
 import MainForm from './forms/MainForm';
 import LoginForm from './forms/LoginForm';
-import Register from './forms/Register';
+import RegisterForm from './forms/RegisterForm';
 
 enum AuthForms {
   MainType = 'Main',
@@ -39,14 +40,16 @@ const AuthDialog: FC<IProps> = ({ isOpened, onClose }) => {
           {formType === AuthForms.MainType ? (
             'Вход'
           ) : (
-            <button className={styles.back_title} onClick={handleFormType}>
+            <Button className={styles.back_title} onClick={handleFormType}>
               <FontIcon name={FontIconName.ArrowLeft} />
-            </button>
+            </Button>
           )}
         </h2>
         {formType === AuthForms.MainType && <MainForm onOpenLogin={handleOpenLogin} />}
         {formType === AuthForms.LoginType && <LoginForm onOpenRegister={handleOpenRegister} />}
-        {formType === AuthForms.RegisterType && <Register onOpenLogin={handleOpenRegister} />}
+        {formType === AuthForms.RegisterType && (
+          <RegisterForm onOpenLogin={handleOpenLogin} onOpenRegister={handleOpenRegister} />
+        )}
       </div>
     </OverlayingPopup>
   );

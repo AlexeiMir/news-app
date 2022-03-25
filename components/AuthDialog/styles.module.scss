@@ -19,3 +19,8 @@
     color: #4683d9;
   }
 }
+
+.buttons_login,
+.buttons_register {
+  @include flexbox(center, space-between);
+}
